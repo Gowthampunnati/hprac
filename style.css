@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.quiz-box {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quiz-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.35);
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.options button {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.options button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #43a047, #388e3c);
+}
+
+.result-area h2 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.score-area p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.next-area button {
+    margin-top: 25px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #2196F3, #1976D2);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.next-area button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #1976D2, #1565C0);
+}
+
+
+footer {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+
+@media (max-width: 500px) {
+    .quiz-box {
+        padding: 20px;
+    }
+
+    #question {
+        font-size: 1.3rem;
+    }
+
+    .options button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .next-area button {
+        font-size: 0.95rem;
+        padding: 8px 20px;
+    }
+}

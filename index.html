@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Quiz App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Simple Quiz Project</h1>
+    </header>
+
+    <div class="quiz-box">
+
+        <h2 id="question">Question will appear here</h2>
+
+        <div class="options">
+            <button onclick="check(1)" id="opt1">Option 1</button>
+            <button onclick="check(2)" id="opt2">Option 2</button>
+            <button onclick="check(3)" id="opt3">Option 3</button>
+            <button onclick="check(4)" id="opt4">Option 4</button>
+        </div>
+
+        <div class="result-area">
+            <h2 id="result"></h2>
+        </div>
+
+        <div class="score-area">
+            <p>Your Score: <span id="score">0</span></p>
+        </div>
+
+        <div class="next-area">
+            <button onclick="next()">Next Question</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Basic JavaScript Quiz Project</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
